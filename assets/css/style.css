@@ -1,58 +1,47 @@
-/*This is where changes affecting the entire body are located*/
-
-.body{
-	
-	
-}
-
-/*This is for the links at the top nav bar*/
-
-.no_underline{
-	text-decoration: none;
-	padding: 20px 10px 5px 10px;
-	color: #777;
-	margin-top: 10px;
-	border-right: 2px;
-	border-right-color: #777;
-	text-align: center;
 
 
-}
+/*This is for name and the links at the top nav bar*/
 
-/*This is where the style for the top row including name and nav menu are located*/
-
-
-
-/*This is for the Teal Block containging my name*/
-
-header{
-	background: #fff;
+#header_container{
 	height: 60px;
 }
 
-#one{
+#header_content{
+	background: #fff;
 	float: left;
-	padding: 20px;
-	margin-left: 60px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	width: 100%
+}
+
+#myname{
+	float: left;
 	background: #4aaaa5;
 	color: #fff;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 24px;
 	width: 200px;
-	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 25px;
 
 }
 
-#two{
+.no_underline{
+	text-decoration: none;
+	color: #777;
+	border-right-color: #777;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+#navbar{
 	float: right;
-	padding: 5px;
-	margin-top: 20px;
-	margin-right: 60px;
-	margin-bottom: 5px;
-	
-	
+	font-size: 20px;
+	color: #777;
+	vertical-align: middle;
+	padding: 20px;
+	width: 37%
+	text-align: center;
 }
 
 
@@ -63,65 +52,157 @@ header{
 /*This is where the styling for the body starts*/
 
 body{
+	width: 960px;
+	margin: 0  auto;
+	display: block;
+	clear: both;
+}
 
-    background-image: url("../images/ep_naturalwhite/ep_naturalwhite.png");
+/*About Page Styling*/
+
+.about{	
+	background-color: #fff;
+	padding: 10px;
+	width: 600px;
+	float: left;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+body{
+	background-image: url("../images/ep_naturalwhite/ep_naturalwhite.png");
+
 }
 
 #heading{
-	
-	color: #4aaaa5;
-	font-size: 36px;
-}
-
-#three{
-	border-style: solid;
-    border-bottom: solid #ddd;
-	padding: 5px;
 	background: #fff;
-}
-
-.about{
-	clear: both;
+	color: #4aaaa5;
+	margin-top: 10px;
 	padding: 20px;
-	margin-left: 60px;
-	background-color: #fff;
-	width: 650px;
-	float: left;
+	vertical-align: middle;
+	font-size: 24px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: solid #777;
+	
 }
 
-.about_picture{
+#about_picture{
 	float: left;
-	padding: 10px;
-
+	padding: 20px;
 }
-
-/*This is for the About Me text*/
 
 .about_text{
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #777;
-	font-size: 16px;
 	line-height: 2;
+	color: #777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/*This starts the sidebar*/
+/*Contact Page Styling*/
+
+#form{
+	background: #fff;
+	width: 600px;
+	float: left;
+}
+
+.label{
+	width: 100%;
+	height: 10px;
+	padding: 10px;
+	margin-left: 10px;
+	color: #777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px; 
+}
+
+.input{
+	width: 560px;
+	height: 20px;
+	margin: 5px 10px 5px 20px;
+	color: #777;
+}
+
+.input2{
+	width: 560px;
+	height: 200px;
+	margin: 5px 10px 5px 20px;
+	color: #777;
+}
+
+#submit{
+	background: #4aaaa5;
+	color: #fff;
+	padding: 15px;
+	margin-left: 20px;
+	border: none;
+	font-size: 18px;
+	width: 150px;
+}
+
+/*This is where the styling for the Portfolio starts*/
+
+.portfolio_container{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#portfolio_images{
+	padding: 5px;
+}
+
+#image1{
+	float: left;
+}
+
+#image2{
+	float: right;
+}
+
+#image3{
+	float: left;
+}
+
+#image4{
+	float: right;
+}
+
+/*This is where the sidebar styling starts*/
 
 .sidebar{
 	float: right;
-	padding: 20px;
-	width: 270px;
-	background: #fff;
-	margin-right: 60px;
-	color: #4aaaa5;
-	font-size: 36px;
-}
-
-#four{
-	text-align: center;
+	width: 25%;
+	background-color: #fff;
 	padding: 10px;
+	width: 270px;
+	margin-top: 5%;
 }
 
+#connect_images{
+	padding: 20px;
+	text-align: center;
+}
 
+/*This is where the footer styling starts*/
 
+.clearfix::after {
+    clear: both;
+}
+
+#footer{
+	clear: both;
+	height: 60px;
+	color: #fff;
+	border-top: solid #4aaaa5;
+	background: #666;
+	font-size: 8px;
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+#footer_text{
+	vertical-align: middle;
+	padding: 20px;
+}
 
 
